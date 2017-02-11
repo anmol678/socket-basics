@@ -6,7 +6,7 @@ var io = require('socket.io')(http);
 
 app.use(express.static(__dirname + '/public'));
 
-io.on('connnection', function() {
+io.on('connection', function() {
 	console.log('User connected to server via socket io');
 });
 
